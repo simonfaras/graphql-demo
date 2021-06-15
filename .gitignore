@@ -24,3 +24,5 @@ yarn-error.log*
 
 
 schema.graphql
+
+idea/
