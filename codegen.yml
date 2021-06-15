@@ -1,0 +1,12 @@
+schema:
+  - https://countries.trevorblades.com:
+# Här kan du lägga in headers som behövs för access
+#      headers:
+#        Authorization: Bearer ${AUTH_KEY_FROM_ENV???}
+generates:
+  ./schema.graphql:
+#   Denna plugin parsar schemat remote och skapar ett på ./schema.graphql, eller vart du nu vill ha det
+    plugins:
+      - schema-ast
+    config:
+      includeDirectives: true
